@@ -1,0 +1,108 @@
+// Mixin
+@mixin typography($font-size) {
+  $base-line-height: $font-size * $ratio;
+  $margin: $base-line-height;
+  body {
+    font-size: $font-size;
+    line-height: ($font-size * $ratio);
+  }
+  h1 {
+    margin-top: $margin * 2;
+    margin-bottom: $margin;
+    font-size: ((($font-size * $ratio) * $ratio) * $ratio);
+    line-height: ($font-size * $ratio) * 3;
+  }
+
+  h2 {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    font-family: $base-font;
+    font-size: (($font-size * $ratio) * $ratio);
+    line-height: ($font-size * $ratio) * 2;
+  }
+
+  h3 {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    font-family: $base-font;
+    font-size: $font-size * $ratio;
+    line-height: ($font-size * $ratio);
+  }
+  h4 {
+    margin-top: $margin;
+    margin-bottom: $margin;
+    font-family: $base-font;
+    font-size: $font-size;
+    line-height: ($font-size * $ratio);
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: $margin;
+    margin-bottom: $margin;
+  }
+}
+
+// Set Up
+
+// Choose the ratio
+$ratio: 1.450;
+
+// Choose base font size per breakpoint using the mixin
+
+// 0 - first breakpoint
+@media (max-width: 299px) {
+  @include typography(15px);
+}
+// start of mobile first breakpoints
+@media (min-width: 300px) {
+  @include typography(15px);
+}
+@media(min-width: 600px) {
+  @include typography(16px);
+}
+@media(min-width: 800px) {
+  @include typography(17px);
+}
+@media(min-width: 1000px) {
+  @include typography(19px);
+}
+@media(min-width: 1200px) {
+  @include typography(21px);
+}
+@media(min-width: 1400px) {
+  @include typography(23px);
+}
+@media(min-width: 1600px) {
+  @include typography(25px);
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+
+  -webkit-font-smoothing: antialiased !important;
+  text-rendering: optimizelegibility;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: $base-font;
+  font-weight: 400;
+  color: $primary-dark;
+}
+p, ul, ol, pre, table, blockquote, h1, h2, h3, h4, h5, h6 {
+  transition: all 200ms ease-in-out;
+}
+a {
+  font-family: $base-font;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+}
+p, ul, ol, pre, table, blockquote, h1, h2, h3, h4, h5, h6, a, small, span {
+  &::selection {
+    color: $primary-dark;
+    background-color: $light-purple;
+  }
+}

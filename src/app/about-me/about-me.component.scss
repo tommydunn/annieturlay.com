@@ -1,0 +1,122 @@
+$dripcolor: #9973d1;
+section {
+  background: #576087 linear-gradient(150deg,#576087,#9973d1);
+  box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
+
+  .column--text {
+    align-self: center;
+  }
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+  }
+  .column--image {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    img {
+      width: 100%;
+      max-width: 70%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      border-radius: .5rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
+      transition: filter .5s cubic-bezier(.43,.41,.22,.91);;
+    }
+  }
+}
+
+
+@keyframes drop {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    transform: translate(0, 550px);
+  }
+}
+
+
+@keyframes droplet {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    width: 30px;
+    height: 30px;
+  }
+  100% {
+    transform: translate(0, 700px);
+  }
+}
+.drip {
+  position: absolute;
+  bottom: 2px;
+  left: 5%;
+  width: 250px;
+  height: 25%;
+  cursor: pointer;
+  background: $dripcolor;
+          filter: url("#goo");
+
+  -webkit-filter: url("#goo");
+  .drop {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 30px;
+    height: 80px;
+    background: $dripcolor;
+    border-radius: 50%;
+    transition: all .4s ease;
+    &:hover {
+      height: 120px;
+    }
+  }
+  .droplet {
+    position: absolute;
+    top: 0;
+    left: 64%;
+    width: 20px;
+    height: 55px;
+    background: $dripcolor;
+    border-radius: 50%;
+    transition: all .4s ease;
+    animation: droplet 1.4s .4s cubic-bezier(.895, .03, .685, .22) 1;
+    &:hover {
+      top: 20px;
+      left: 63%;
+      width: 40px;
+      animation: reset;
+    }
+  }
+  .droplet2 {
+    position: absolute;
+    top: 20px;
+    left: 76%;
+    z-index: 3;
+    width: 20px;
+    height: 35px;
+    background: $dripcolor;
+    border-radius: 50%;
+    transition: all .4s ease;
+    &.dripit {
+      animation: droplet 1s .6s cubic-bezier(.895, .03, .685, .22) 1;
+    }
+  }
+}

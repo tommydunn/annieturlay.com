@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  color: $black;
+  background-color: $white;
+  &.home,
+  &.contact {
+    overflow: hidden;
+  }
+}
+video,
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  transition: color .3s 0s ease-out, background-color .3s 0s ease-out, border-color .3s 0s ease-out;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hidden {
+  display: none;
+}
+li {
+  list-style: none;
+}

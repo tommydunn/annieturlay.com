@@ -1,23 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-
-import { EmbedVideo } from 'ngx-embed-video';
-
-
 import { AppComponent } from './app.component';
-
+import { AboutMeComponent } from './about-me/about-me.component';
+import { PlayerComponent } from './player.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutMeComponent,
+    PlayerComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule,
-    EmbedVideo.forRoot()
+    HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, PlayerComponent]
 })
 export class AppModule { }
