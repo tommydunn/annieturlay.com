@@ -10,7 +10,30 @@
   </div>
 </section>
 <section class="section work">
-  <div class="container">
+  <div class="container is-fluid">
+    <div class="columns is-multiline">
+
+
+    <div class="column is-full player__item" *ngFor="let p of projects">
+  		<youtube-player [videoId]="p.youtubeid"
+      [width]="'100%'"
+      [height]="'100%'"
+      [playerVars]="{
+        'cc_load_policy': 1,
+        'controls': 0,
+        'disablekb': 1,
+        'enablejsapi': 1,
+        'fs': 0,
+        'rel': 0,
+        'showinfo': 0,
+        'color': white
+              }" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+  		</youtube-player>
+
+  		<button type="button" class="btn btn-default" (click)="playVideo()">Play</button>
+  		<button type="button" class="btn btn-default" (click)="pauseVideo()">Pause</button>
+    </div>
+    </div>
 
   </div>
 </section>
