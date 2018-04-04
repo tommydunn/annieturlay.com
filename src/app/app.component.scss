@@ -1,10 +1,11 @@
 .section {
-  background-color: #333;
+  // background-color: #222;
 }
 .video-header {
   position: relative;
   height: 55vh;
   overflow: hidden;
+  background-color: #222;
   @media(min-width: 765px) {
     height: 80vh;
   }
@@ -30,19 +31,26 @@
     z-index: 99999;
     display: flex;
     flex-direction: row;
+    flex-direction: column;
     min-width: 100vw;
     height: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     // background-image: linear-gradient( 135deg, #90f7ec 10%, #32ccbc 100%);
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAYAAAEFsT2yAAAACXBIWXMAAAsSAAALEgHS3X78AAAAFElEQVR4nGNhYGBwYIET////ZwAAETIDym2lzEcAAAAASUVORK5CYII=);
     background-repeat: repeat;
     background-position: 0 0;
     background-size: 2px 2px;
 
-    justify-content: flex-start;
-    align-items: flex-end;
+    justify-content: flex-end;
+    align-items: flex-start;
+
     h1 {
+      margin-bottom: 0;
       font-weight: 600;
+      color: #fff;
+    }
+    h2 {
+      margin-top: 0;
       color: #fff;
     }
   }
