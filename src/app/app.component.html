@@ -3,37 +3,38 @@
     <div class="container">
       <img class="image" src="assets/images/annie.svg" />
       <div class="hero-title">
-      <h1 class="title is-1">Annie Turlay</h1>
-      <h2 class="subtitle is-3">sr. producer</h2>
+        <h1 class="title is-1">Annie Turlay</h1>
+        <h2 class="subtitle is-3">sr. producer</h2>
       </div>
     </div>
   </div>
 </section>
-<section class="section work">
-  <div class="container is-fluid">
-    <div class="columns is-multiline">
+    <div class="columns is-multiline is-gapless project-list">
+      <div class="column is-full project-list__item" *ngFor="let p of projects"
+      [class.selected]="p === selectedProject"
+      (click)="onSelect(p)">
+      <a class="link link--play" (click)="playVideo()"><img src="assets/images/play.svg" /></a>
 
-
-    <div class="column is-full player__item" *ngFor="let p of projects">
-  		<youtube-player [videoId]="p.youtubeid"
-      [width]="'100%'"
-      [height]="'100%'"
-      [playerVars]="{
-        'cc_load_policy': 1,
-        'controls': 0,
-        'disablekb': 1,
-        'enablejsapi': 1,
-        'fs': 0,
-        'rel': 0,
-        'showinfo': 0,
-        'color': white
-              }" (ready)="savePlayer($event)" (change)="onStateChange($event)">
-  		</youtube-player>
-
-  		<button type="button" class="btn btn-default" (click)="playVideo()">Play</button>
-  		<button type="button" class="btn btn-default" (click)="pauseVideo()">Pause</button>
+      <div [style.background-image]="'url(' + p.image + ')'" (click)="playVideo()" class="project-list__image"></div>
     </div>
-    </div>
-
   </div>
-</section>
+
+
+
+<div *ngIf="selectedProject" class="player">
+  <youtube-player [videoId]="selectedProject.youtubeid"
+  [width]="'100%'"
+  [height]="'100%'"
+  [playerVars]="{
+    'cc_load_policy': 1,
+    'controls': 0,
+    'disablekb': 1,
+    'enablejsapi': 1,
+    'fs': 0,
+    'rel': 0,
+    'showinfo': 0,
+    'color': white
+  }" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+</youtube-player>
+<button type="button" class="btn btn-default" (click)="pauseVideo()">Pause</button>
+</div>

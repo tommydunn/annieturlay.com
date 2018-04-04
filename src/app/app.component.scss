@@ -21,6 +21,21 @@
   }
 }
 
-.player__item {
-  height: 20vw;
+.project-list {
+  &__item {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .link--play {
+    position: absolute;
+  }
+  &__image {
+    width: 100%;
+    height: 55vw;
+    background-position: center center;
+    background-size: cover;
+  }
 }

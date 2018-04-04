@@ -14,17 +14,22 @@ export class AppComponent implements OnInit {
   private player;
   private ytEvent;
   projects = PROJECTS;
+  selectedProject: Project;
 
   @HostListener('document:mousemove', ['$event'])
   onMouseMove(e) {
     this.mouseEvent = e;
-    console.log(e);
   }
 
   constructor() { }
 
   ngOnInit() {
   }
+
+  onSelect(project: Project): void {
+    this.selectedProject = project;
+  }
+
   onStateChange(event) {
     this.ytEvent = event.data;
   }
