@@ -1,8 +1,9 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-
+import { AppModalService } from './app-modal.service';
 import { Project } from './project';
 import { PROJECTS } from './projects';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-root',
@@ -16,8 +17,8 @@ export class AppComponent implements OnInit {
   project: Project;
 
   public currentIndex: number;
-  public selectedProject: Project = this.projects[this.currentIndex];
-
+  public selectedProject: Project;
+  public element: JQuery;
   private id = '';
   private player: any;
   private ytEvent: any;
@@ -27,7 +28,8 @@ export class AppComponent implements OnInit {
     // this.mouseEvent = e;
   }
 
-  constructor(private sanitizer: DomSanitizer) { }
+  constructor(private sanitizer: DomSanitizer,
+    private modalService: AppModalService) { }
 
   ngOnInit() {
     this.selectedProject = null;
@@ -46,9 +48,12 @@ export class AppComponent implements OnInit {
     this.player.stopVideo();
   }
 
-  exitPlayer(): void {
-    // this.closeModal('custom-modal-1');
-    this.selectedProject = null;
+  openModal(id: string) {
+    this.modalService.open(id);
+  }
+
+  closeModal(id: string) {
+    this.modalService.close(id);
   }
 
   savePlayer(player) {
@@ -61,6 +66,15 @@ export class AppComponent implements OnInit {
 
   pauseVideo() {
     this.player.pauseVideo();
+    this.selectedProject = null;
+  }
+
+  showModal(): void {
+    this.openModal('custom-modal-1');
+  }
+
+  exitModal(): void {
+    this.closeModal('custom-modal-1');
     this.selectedProject = null;
   }
 }

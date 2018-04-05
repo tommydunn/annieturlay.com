@@ -5,6 +5,7 @@ $lime: #96e8bf;
 $light-teal: #e7f1ec;
 $grey: #5b5e63;
 $white: #f5f7fa;
+$light: #f5f5f5;
 $black: #4a4a4a;
 $primary-dark: #28282d;
 $purple: #655af3;
@@ -29,8 +30,9 @@ $speed: 86ms;
 //
 $site-font-path: "../assets/fonts" !default;
 $icon--envelope: \e900;
-$icon--cross: \ea0f;
+$icon--close: \e902;
 $icon--play: \ea15;
 $icon--pause: \ea16;
 $icon--stop: \ea17;
 $icon--linkedin: \eac9;
+$icon--close--thin: \e901;

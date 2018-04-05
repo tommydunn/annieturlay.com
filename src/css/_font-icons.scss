@@ -26,15 +26,19 @@
 @function unicode($str) {
   @return unquote("\"") + $str + unquote("\"");
 }
-
+.icon--close--thin {
+  &:before {
+    content: unicode($icon--close--thin);
+  }
+}
 .icon--envelope {
   &:before {
     content: unicode($icon--envelope);
   }
 }
-.icon--cross {
+.icon--close {
   &:before {
-    content: unicode($icon--cross);
+    content: unicode($icon--close);
   }
 }
 .icon--play {
