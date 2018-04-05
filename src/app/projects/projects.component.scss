@@ -1,3 +1,4 @@
+@import "../../css/breakpoints";
 .hero {
   background: url(/assets/images/endless-clouds-2.svg);
   background-color: #9eebcf;
@@ -5,6 +6,12 @@
   @media(max-width: 769px) {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+  .hero-body {
+    @include tablet {
+      padding-top: 13rem;
+      padding-bottom: 13rem;
+    }
   }
   .container {
     display: flex;
@@ -14,13 +21,17 @@
   }
   .box {
     position: absolute;
-    bottom: -250px;
+    bottom: -264px;
     display: flex;
     flex-direction: column;
-    width: 60vw;
+    width: 90vw;
 
     justify-content: center;
     align-items: center;
+    @include tablet {
+      bottom: -291px;
+      width: 43vw;
+    }
   }
   img {
     height: 7vw;
@@ -42,7 +53,11 @@
 }
 
 .projects {
-  padding-top: 15rem;
+  padding-top: 9rem;
+
+  @include tablet {
+    padding-top: 11rem;
+  }
 }
 .project-list {
   &__item {

@@ -1,122 +1,95 @@
-$dripcolor: #9973d1;
-section {
-  background: #576087 linear-gradient(150deg,#576087,#9973d1);
-  box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
+@import "../../css/breakpoints";
 
-  .column--text {
-    align-self: center;
+.hero {
+  // background-color: #28282d;
+  // box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
+  .container {
+    align-self: stretch;
   }
-  h1 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
-  }
-  h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-weight: 700;
-    color: #fff;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
-  }
-  .column--image {
-    position: relative;
-    display: flex;
+}
+$pad: 40px;
+$space: 0;
+$stroke: 4px;
 
-    justify-content: center;
-    img {
-      width: 100%;
-      max-width: 70%;
-      height: 100%;
-      background: rgba(0, 0, 0, .4);
-      border-radius: .5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
-      transition: filter .5s cubic-bezier(.43,.41,.22,.91);;
+
+
+.box {
+  position: relative;
+  width: 85vw;
+  padding: 10px;
+  margin: 0 auto;
+  background-color: #9eebcf;
+
+  @include tablet {
+    width: 45vw;
+  }
+   > img {
+    width: 85vw;
+    height: 50vw;
+    // opacity: .5;
+
+    object-fit: cover;
+    @include tablet {
+      width: 45vw;
+      height: 25vw;
     }
   }
+
+  &::after {
+    position: absolute;
+    top: $pad;
+    right: $pad;
+    bottom: $pad - $space + 7px;
+    left: $pad;
+    display: block;
+    content: '';
+    border: solid $stroke white;
+    border-bottom: 0;
+  }
 }
 
-
-@keyframes drop {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    width: 40px;
-    height: 40px;
-  }
-  100% {
-    transform: translate(0, 550px);
-  }
-}
-
-
-@keyframes droplet {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    width: 30px;
-    height: 30px;
-  }
-  100% {
-    transform: translate(0, 700px);
-  }
-}
-.drip {
+.text {
   position: absolute;
-  bottom: 2px;
-  left: 5%;
-  width: 250px;
-  height: 25%;
-  cursor: pointer;
-  background: $dripcolor;
-          filter: url("#goo");
+  right: $pad;
+  bottom: $pad - $space;
+  left: $pad;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  white-space: nowrap;
+}
 
-  -webkit-filter: url("#goo");
-  .drop {
-    position: absolute;
-    top: 0;
-    left: 75%;
-    width: 30px;
-    height: 80px;
-    background: $dripcolor;
-    border-radius: 50%;
-    transition: all .4s ease;
-    &:hover {
-      height: 120px;
-    }
+.text > div {
+  width: 2000px;
+  margin-left: -1 * (2000px - (400px - $pad)) / 2;
+}
+
+.innertext::before,
+.innertext::after {
+  display: inline-block;
+  width: 600px;
+  height: $stroke;
+  // vertical-align: middle;
+  content: '';
+  background: white;
+}
+
+.innertext::before {
+  margin-right: 16px;
+}
+
+.innertext::after {
+  margin-left: 16px;
+}
+
+.content {
+  a {
+    font-weight: bold;
+    color: #9eebcf;
   }
-  .droplet {
-    position: absolute;
-    top: 0;
-    left: 64%;
-    width: 20px;
-    height: 55px;
-    background: $dripcolor;
-    border-radius: 50%;
-    transition: all .4s ease;
-    animation: droplet 1.4s .4s cubic-bezier(.895, .03, .685, .22) 1;
-    &:hover {
-      top: 20px;
-      left: 63%;
-      width: 40px;
-      animation: reset;
-    }
-  }
-  .droplet2 {
-    position: absolute;
-    top: 20px;
-    left: 76%;
-    z-index: 3;
-    width: 20px;
-    height: 35px;
-    background: $dripcolor;
-    border-radius: 50%;
-    transition: all .4s ease;
-    &.dripit {
-      animation: droplet 1s .6s cubic-bezier(.895, .03, .685, .22) 1;
-    }
-  }
+}
+li {
+  list-style: circle;
 }

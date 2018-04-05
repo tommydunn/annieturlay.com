@@ -12,15 +12,16 @@ body {
       }
     }
   }
-  &.resume {
+  &.about-me {
     .app-nav__item {
       a {
-        color: $light-green;
+        color: $black;
         &:hover {
           color: lighten($black, 50%);
         }
         &.nav-link--is-active {
-          color: darken($light-green, 15%);
+          color: $light-green;
+          border-bottom: 1px solid $light-green;
         }
       }
     }

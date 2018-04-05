@@ -13,9 +13,6 @@ import { DOCUMENT } from '@angular/platform-browser';
       <li (click)="goToAboutMe()" class="app-nav__item">
         <a class="app-nav__link" [routerLink]="['/about-me']" routerLinkActive="nav-link--is-active">About Me</a>
       </li>
-      <li (click)="goToResume()" class="app-nav__item">
-        <a class="app-nav__link" [routerLink]="['/resume']" routerLinkActive="nav-link--is-active">Resume</a>
-      </li>
     </ul>
   </nav>`,
   styles: [`
