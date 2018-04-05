@@ -1,80 +1,37 @@
-import { Component, OnInit, HostListener } from '@angular/core';
-import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
-import { AppModalService } from './app-modal.service';
-import { Project } from './project';
-import { PROJECTS } from './projects';
-import * as $ from 'jquery';
+import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, NavigationEnd, Event } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent implements OnInit {
-  mouseEvent;
-  projects = PROJECTS;
-  project: Project;
+  private classes: Array<string> = [];
 
-  public currentIndex: number;
-  public selectedProject: Project;
-  public element: JQuery;
-  private id = '';
-  private player: any;
-  private ytEvent: any;
-
-  @HostListener('document:mousemove', ['$event'])
-  onMouseMove(e) {
-    // this.mouseEvent = e;
+  removeBodyClasses() {
+    this.classes.map((key: string) => {
+      if (key.length > 0) { document.body.classList.remove(key); }
+    });
   }
 
-  constructor(private sanitizer: DomSanitizer,
-    private modalService: AppModalService) { }
+  addBodyClasses(path) {
+    this.classes = path.replace(/\/[0-9]+/g, '').split('?')[0].split('/');
+    this.classes.map((key: string) => {
+      if (key.length > 0) { document.body.classList.add(key); }
+    });
+  }
+
+  constructor(private router: Router) {
+    router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        this.removeBodyClasses();
+        this.addBodyClasses(event.url.substring(1));
+      }
+    });
+  }
 
   ngOnInit() {
-    this.selectedProject = null;
-  }
-
-  onSelect(project: Project, index: number): void {
-    this.currentIndex = index;
-    this.selectedProject = project;
-  }
-
-  onStateChange(event) {
-    this.ytEvent = event.data;
-  }
-
-  stopVideo(): void {
-    this.player.stopVideo();
-  }
-
-  openModal(id: string) {
-    this.modalService.open(id);
-  }
-
-  closeModal(id: string) {
-    this.modalService.close(id);
-  }
-
-  savePlayer(player) {
-    this.player = player;
-  }
-
-  playVideo() {
-    this.player.playVideo();
-  }
-
-  pauseVideo() {
-    this.player.pauseVideo();
-    this.selectedProject = null;
-  }
-
-  showModal(): void {
-    this.openModal('custom-modal-1');
-  }
-
-  exitModal(): void {
-    this.closeModal('custom-modal-1');
-    this.selectedProject = null;
+    //
   }
 }
