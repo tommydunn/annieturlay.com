@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'site';
+  font-style: normal;
+  font-weight: normal;
+
+  src: url('#{$site-font-path}/site.eot?kr9sb6');
+  src: url('#{$site-font-path}/site.eot?kr9sb6#iefix') format('embedded-opentype'),
+  url('#{$site-font-path}/site.ttf?kr9sb6') format('truetype'),
+  url('#{$site-font-path}/site.woff?kr9sb6') format('woff'),
+  url('#{$site-font-path}/site.svg?kr9sb6#site') format('svg');
+}
+
+[class^="icon--"], [class*=" icon--"] {
+  font-family: 'site' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-transform: none;
+
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+.icon--envelope {
+  &:before {
+    content: unicode($icon--envelope);
+  }
+}
+.icon--cross {
+  &:before {
+    content: unicode($icon--cross);
+  }
+}
+.icon--play {
+  &:before {
+    content: unicode($icon--play);
+  }
+}
+.icon--pause {
+  &:before {
+    content: unicode($icon--pause);
+  }
+}
+.icon--stop {
+  &:before {
+    content: unicode($icon--stop);
+  }
+}
+.icon--linkedin {
+  &:before {
+    content: unicode($icon--linkedin);
+  }
+}

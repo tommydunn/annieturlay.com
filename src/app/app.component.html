@@ -1,4 +1,4 @@
-<section class="hero is-medium">
+<section class="hero is-large">
   <div class="hero-body">
     <div class="container">
       <img class="image" src="assets/images/annie.svg" />
@@ -9,20 +9,26 @@
     </div>
   </div>
 </section>
-    <div class="columns is-multiline is-gapless project-list">
-      <div class="column is-full project-list__item" *ngFor="let p of projects"
-      [class.selected]="p === selectedProject"
-      (click)="onSelect(p)">
-      <a class="link link--play" (click)="playVideo()"><img src="assets/images/play.svg" /></a>
-
-      <div [style.background-image]="'url(' + p.image + ')'" (click)="playVideo()" class="project-list__image"></div>
+<section class="section">
+  <div class="container is-fullhd">
+    <div class="columns is-multiline project-list">
+      <div class="column is-full project-list__item" *ngFor="let p of projects; let $index = index"
+      (click)="onSelect(p, $index)" [class.selected]="p === selectedProject">
+      <a class="link link--play"><span class="icon icon--play"></span></a>
+      <div [style.background-image]="'url(' + p.image + ')'" class="project-list__image"></div>
     </div>
   </div>
+</div>
 
 
 
-<div *ngIf="selectedProject" class="player">
-  <youtube-player [videoId]="selectedProject.youtubeid"
+<div class="player">
+  <youtube-player
+  *ngIf="selectedProject"
+  protocol="https"
+  (ready)="savePlayer($event)"
+  (change)="onStateChange($event)"
+  [videoId]="selectedProject.youtubeid"
   [width]="'100%'"
   [height]="'100%'"
   [playerVars]="{
@@ -34,7 +40,8 @@
     'rel': 0,
     'showinfo': 0,
     'color': white
-  }" (ready)="savePlayer($event)" (change)="onStateChange($event)">
+  }">
 </youtube-player>
-<button type="button" class="btn btn-default" (click)="pauseVideo()">Pause</button>
+<button type="button" class="btn btn-default" (click)="exitPlayer()">Pause</button>
 </div>
+</section>
