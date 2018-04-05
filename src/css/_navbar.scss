@@ -2,12 +2,12 @@ body {
   &.projects {
     .app-nav__item {
       a {
-        color: $white;
+        color: $black;
         &:hover {
-          color: lighten($grey, 50%);
+          color: lighten($black, 50%);
         }
         &.nav-link--is-active {
-          color: $purple;
+          border-bottom: 1px solid $black;
         }
       }
     }
@@ -15,12 +15,12 @@ body {
   &.resume {
     .app-nav__item {
       a {
-        color: $light-purple;
+        color: $light-green;
         &:hover {
-          color: lighten($grey, 50%);
+          color: lighten($black, 50%);
         }
         &.nav-link--is-active {
-          color: darken($light-purple, 15%);
+          color: darken($light-green, 15%);
         }
       }
     }
@@ -53,6 +53,9 @@ body {
 
   li {
     display: inline-block;
+    &:hover {
+      cursor: pointer;
+    }
     a {
       display: inline-block;
       padding: 1em;

@@ -2,8 +2,6 @@
   background: url(/assets/images/endless-clouds-2.svg);
   background-color: #9eebcf;
   background-size: 30px;
-
-  clip-path: ellipse(100% 55% at 48% 44%);
   @media(max-width: 769px) {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -14,23 +12,38 @@
     justify-content: center;
     align-items: center;
   }
+  .box {
+    position: absolute;
+    bottom: -250px;
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+
+    justify-content: center;
+    align-items: center;
+  }
   img {
-    height: 10vw;
-    margin-right: 1.5rem;
+    height: 7vw;
+  }
+  .hero-title {
+    text-align: center;
   }
   h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 600;
-    color: #000;
+    color: #28282d;
   }
   h2 {
     margin-top: 0;
     margin-bottom: 0;
-    color: #000;
+    color: #28282d;
   }
 }
 
+.projects {
+  padding-top: 15rem;
+}
 .project-list {
   &__item {
     position: relative;

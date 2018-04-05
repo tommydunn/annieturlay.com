@@ -9,13 +9,8 @@ html {
 
 body {
   min-width: 320px;
-  // min-height: 100vh;
-  font-family: 'Raleway', sans-serif;
+  font-family: $base-font;
   color: $black;
-  &.home,
-  &.contact {
-    overflow: hidden;
-  }
 }
 video,
 img {
