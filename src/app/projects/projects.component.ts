@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { AppModalService } from '../app-modal.service';
 import { Project } from '../project';
@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   mouseEvent;
   projects = PROJECTS;
   project: Project;
-
+  html5Player;
   public currentIndex: number;
   public selectedProject: Project;
   public element: JQuery;
@@ -23,13 +23,26 @@ export class ProjectsComponent implements OnInit {
   private player: any;
   private ytEvent: any;
 
-  @HostListener('document:mousemove', ['$event'])
+  @HostListener('document:mouseenter', ['$event'])
   onMouseMove(e) {
     // this.mouseEvent = e;
   }
 
   constructor(private sanitizer: DomSanitizer,
+    private el: ElementRef,
     private modalService: AppModalService) { }
+
+  @HostListener('mouseenter') onMouseEnter() {
+    // this.html5Player = document.getElementsByClassName('html5-player')[0];
+    // this.html5Player.classList.add('active');
+    // this.html5Player.play();
+  }
+
+  @HostListener('mouseleave') onMouseLeave() {
+    // this.html5Player = document.getElementsByClassName('html5-player.active')[0];
+    // this.html5Player.classList.remove('active');
+    // this.html5Player.stop();
+  }
 
   ngOnInit() {
     this.selectedProject = null;
