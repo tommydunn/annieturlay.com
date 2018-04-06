@@ -14,7 +14,7 @@
 <section class="section projects">
   <div class="container is-fullhd">
     <div class="columns is-multiline project-list">
-      <div class="column is-full project-list__item" *ngFor="let p of projects; let $index = index"
+      <div class="column is-half project-list__item" *ngFor="let p of projects; let $index = index"
       (click)="onSelect(p, $index)" [class.selected]="p === selectedProject" (click)="openModal('custom-modal-1')">
       <a class="link link--play"><span class="icon icon--play"></span></a>
       <div [style.background-image]="'url(' + p.image + ')'" class="project-list__image"></div>

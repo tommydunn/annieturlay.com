@@ -2,6 +2,54 @@ import { Project } from './project';
 
 export const PROJECTS: Project[] = [
   {
+    name: 'American Airlines',
+    title: 'Employee Video',
+    youtubeid: 'P8QkqhBbfRw',
+    image: 'assets/images/splash/american-airlines-employee-video.jpg',
+    video: ''
+  }, {
+    name: 'Applebees',
+    title: 'Showboatin Chef',
+    youtubeid: 'djDxI0Q-Fpc',
+    image: 'assets/images/splash/applebees-showboatin-chef-splash.jpg',
+    video: ''
+  }, {
+    name: 'BarkThins',
+    title: 'Direct hit',
+    youtubeid: 'k5sj8kCm2ag',
+    image: 'assets/images/splash/barkthins-direct-hit.jpg',
+    video: ''
+  }, {
+    name: 'BarkThins',
+    title: 'Yoga',
+    youtubeid: 'KZcN_DYSAKs',
+    image: 'assets/images/splash/barkthins-yoga.jpg',
+    video: ''
+  }, {
+    name: 'Charles Schwab',
+    title: 'The Reason',
+    youtubeid: 'vqq7y0rjTIk',
+    image: 'assets/images/splash/charles-schwab-the-reason.jpg',
+    video: ''
+  }, {
+    name: 'Fruit of the Loom',
+    title: 'PlasticPants',
+    youtubeid: 'cdtWfcxgm-Q',
+    image: 'assets/images/splash/fruit-of-the-loom-plasticpants.jpg',
+    video: ''
+  }, {
+    name: 'Ice Breakers',
+    title: 'Cement Shoes',
+    youtubeid: '3ZGKkapTadc',
+    image: 'assets/images/splash/ice-breakers-cement-shoes.jpg',
+    video: ''
+  }, {
+    name: 'Kraft',
+    title: 'Bounce House',
+    youtubeid: 'GB0bLbPmzxA',
+    image: 'assets/images/splash/kraft-bounce-house.jpg',
+    video: ''
+  }, {
     name: 'Infiniti',
     title: 'Alexa',
     youtubeid: 'Smq6ssI-nH8',
