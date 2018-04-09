@@ -2,6 +2,13 @@ import { Project } from './project';
 
 export const PROJECTS: Project[] = [
   {
+    name: 'Letgo',
+    title: 'Cliff',
+    director: 'Murro - Biscuit',
+    youtubeid: '6XlBeaxTUEg',
+    image: 'assets/images/splash/letgo-cliff-splash.jpg',
+    video: 'assets/videos/letgo-cliff-splash.mp4'
+  }, {
     name: 'American Airlines',
     title: 'Employee Video',
     director: 'Chris McPherson - Hungry Man',
