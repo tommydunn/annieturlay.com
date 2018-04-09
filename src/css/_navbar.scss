@@ -2,12 +2,12 @@ body {
   &.projects {
     .app-nav__item {
       a {
-        color: $black;
+        color: $white;
         &:hover {
-          color: lighten($black, 50%);
+          color: lighten($white, 50%);
         }
         &.nav-link--is-active {
-          border-bottom: 1px solid $black;
+          border-bottom: 1px solid $white;
         }
       }
     }
@@ -15,13 +15,13 @@ body {
   &.about-me {
     .app-nav__item {
       a {
-        color: $black;
+        color: $blue;
         &:hover {
-          color: lighten($black, 50%);
+          color: lighten($blue, 50%);
         }
         &.nav-link--is-active {
-          color: $light-green;
-          border-bottom: 1px solid $light-green;
+          color: $blue;
+          border-bottom: 1px solid $blue;
         }
       }
     }

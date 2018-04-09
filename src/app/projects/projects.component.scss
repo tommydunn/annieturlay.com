@@ -1,8 +1,10 @@
 @import "../../css/breakpoints";
 .hero {
-  background: url(/assets/images/endless-clouds-2.svg);
-  background-color: #9eebcf;
-  background-size: 30px;
+  background: url(/assets/images/anchors-away.svg);
+  background-color: #036;
+  // background-color: #fff;
+  // background-color: #010048;
+  background-size: 42px;
   @media(max-width: 769px) {
     padding-top: 8rem;
     padding-bottom: 8rem;
@@ -43,12 +45,12 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 600;
-    color: #28282d;
+    color: #036;
   }
   h2 {
     margin-top: 0;
     margin-bottom: 0;
-    color: #28282d;
+    color: #036;
   }
 }
 
