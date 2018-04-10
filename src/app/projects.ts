@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/ice-breakers-cement-shoes.jpg',
     video: 'assets/videos/ice-breakers-cement-shoes.mp4'
   }, {
-    name: 'Kraft',
+    name: 'Kraft Macaroni & Cheese',
     title: 'Bounce House',
     director: 'Harry Cocciolo - Bob Industries',
     youtubeid: 'GB0bLbPmzxA',
