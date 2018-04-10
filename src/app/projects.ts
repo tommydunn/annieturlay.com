@@ -4,7 +4,7 @@ export const PROJECTS: Project[] = [
   {
     name: 'Letgo',
     title: 'Cliff',
-    director: 'Murro - Biscuit',
+    director: 'Noam Murro - Biscuit',
     youtubeid: '6XlBeaxTUEg',
     image: 'assets/images/splash/letgo-cliff-splash.jpg',
     video: 'assets/videos/letgo-cliff-splash.mp4'
