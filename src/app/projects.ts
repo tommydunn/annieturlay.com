@@ -9,6 +9,13 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/letgo-cliff-splash.jpg',
     video: 'assets/videos/letgo-cliff-splash.mp4'
   }, {
+    name: 'Kraft Cracker Barrel',
+    title: 'PrestigiousAwards',
+    director: 'Milana Vayntrub - Hungry Man',
+    youtubeid: 'hTWdYiCduWo',
+    image: 'assets/images/splash/kraft-cracker-barrel-prestigious-awards-splash.jpg',
+    video: 'assets/videos/kraft-cracker-barrel-prestigious-awards-splash.mp4'
+  }, {
     name: 'American Airlines',
     title: 'Employee Video',
     director: 'Chris McPherson - Hungry Man',
