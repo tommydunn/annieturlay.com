@@ -42,3 +42,7 @@ li {
 a {
   color: $black;
 }
+::selection {
+  color: $white;
+  background: $blue;
+}
