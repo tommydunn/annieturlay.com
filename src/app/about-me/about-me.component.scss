@@ -1,8 +1,6 @@
 @import "../../css/breakpoints";
 
 .hero {
-  // background-color: #28282d;
-  // box-shadow: 0 2px 10px rgba(0,0,0,.16), 0 3px 6px rgba(0,0,0,.1);
   .container {
     align-self: stretch;
   }
@@ -26,7 +24,6 @@ $stroke: 4px;
    > img {
     width: 85vw;
     height: 50vw;
-    // opacity: .5;
 
     object-fit: cover;
     @include tablet {
@@ -71,7 +68,6 @@ $stroke: 4px;
   display: inline-block;
   width: 600px;
   height: $stroke;
-  // vertical-align: middle;
   content: '';
   background: white;
 }
@@ -87,7 +83,11 @@ $stroke: 4px;
 .content {
   a {
     font-weight: bold;
-    color: #9eebcf;
+    color: #036;
+  }
+  strong {
+    color: #036;
+    // border-bottom: 1px solid #036;
   }
 }
 li {
