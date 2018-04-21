@@ -3,13 +3,14 @@
 .hero {
   .container {
     align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 }
 $pad: 40px;
 $space: 0;
 $stroke: 4px;
-
-
 
 .box {
   position: relative;
@@ -17,14 +18,13 @@ $stroke: 4px;
   padding: 10px;
   margin: 0 auto;
   background-color: #036;
-
   @include tablet {
     width: 45vw;
   }
-   > img {
+
+  > img {
     width: 85vw;
     height: 50vw;
-
     object-fit: cover;
     @include tablet {
       width: 45vw;
@@ -54,7 +54,7 @@ $stroke: 4px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   white-space: nowrap;
 }
 
@@ -63,8 +63,8 @@ $stroke: 4px;
   margin-left: -1 * (2000px - (400px - $pad)) / 2;
 }
 
-.innertext::before,
-.innertext::after {
+.innertext::after,
+.innertext::before {
   display: inline-block;
   width: 600px;
   height: $stroke;
@@ -78,18 +78,4 @@ $stroke: 4px;
 
 .innertext::after {
   margin-left: 16px;
-}
-
-.content {
-  a {
-    font-weight: bold;
-    color: #036;
-  }
-  strong {
-    color: #036;
-    // border-bottom: 1px solid #036;
-  }
-}
-li {
-  list-style: circle;
 }

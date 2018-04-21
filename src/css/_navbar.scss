@@ -12,7 +12,8 @@ body {
       }
     }
   // }
-  &.about-me {
+  &.about-me,
+  &.resume {
     .app-nav__item {
       a {
         color: $blue;
