@@ -1,5 +1,5 @@
 body {
-  &.projects {
+  // &.projects {
     .app-nav__item {
       a {
         color: $white;
@@ -11,7 +11,7 @@ body {
         }
       }
     }
-  }
+  // }
   &.about-me {
     .app-nav__item {
       a {
