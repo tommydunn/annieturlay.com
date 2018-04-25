@@ -2,10 +2,11 @@
 
 .hero {
   .container {
+    display: flex;
+
     align-self: stretch;
     align-items: center;
     justify-content: center;
-    display: flex;
   }
 }
 $pad: 40px;
@@ -18,13 +19,15 @@ $stroke: 4px;
   padding: 10px;
   margin: 0 auto;
   background-color: #036;
+
   @include tablet {
     width: 45vw;
   }
 
-  > img {
+   > img {
     width: 85vw;
     height: 50vw;
+
     object-fit: cover;
     @include tablet {
       width: 45vw;
@@ -54,7 +57,7 @@ $stroke: 4px;
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: .1em;
   white-space: nowrap;
 }
 

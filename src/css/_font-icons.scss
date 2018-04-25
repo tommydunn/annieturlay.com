@@ -26,19 +26,45 @@
 @function unicode($str) {
   @return unquote("\"") + $str + unquote("\"");
 }
+
+.icon--instagram {
+  &:before {
+    content: unicode($icon--instagram);
+  }
+}
 .icon--close--thin {
   &:before {
     content: unicode($icon--close--thin);
   }
 }
-.icon--envelope {
+.icon--twitter--filled {
   &:before {
-    content: unicode($icon--envelope);
+    content: unicode($icon--twitter--filled);
+  }
+}
+.icon--twitter {
+  &:before {
+    content: unicode($icon--twitter);
+  }
+}
+.icon--facebook {
+  &:before {
+    content: unicode($icon--facebook);
+  }
+}
+.icon--cloud-download {
+  &:before {
+    content: unicode($icon--cloud-download);
   }
 }
 .icon--close {
   &:before {
     content: unicode($icon--close);
+  }
+}
+.icon--email {
+  &:before {
+    content: unicode($icon--email);
   }
 }
 .icon--play {

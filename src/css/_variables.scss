@@ -1,8 +1,9 @@
 // Colors
 $light-green: #9eebcf;
-$white: #f5f7fa;
+$white: #fff;
 $black: #28282d;
 $blue: #036;
+$light-blue: #0064c8;
 // Misc
 $base-font: 'Lato', sans-serif;
 $tablet: 769px;
@@ -15,10 +16,16 @@ $close-btn-before-height: 10px;
 $speed: 86ms;
 //
 $site-font-path: "../assets/fonts" !default;
-$icon--envelope: \e900;
+$icon--instagram: \e907;
+$icon--close--thin: \e901;
+$icon--twitter--filled: \e904;
+$icon--twitter: \e905;
+$icon--facebook: \e906;
+$icon--cloud-download: \e903;
 $icon--close: \e902;
+$icon--email: \e900;
 $icon--play: \ea15;
 $icon--pause: \ea16;
 $icon--stop: \ea17;
 $icon--linkedin: \eac9;
-$icon--close--thin: \e901;
+// rgb(239,247,255)
