@@ -71,6 +71,7 @@ export class ProjectsComponent implements OnInit {
 
   savePlayer(player) {
     this.player = player;
+    this.player.playVideo();
   }
 
   playVideo() {
