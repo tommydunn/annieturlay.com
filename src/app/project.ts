@@ -4,5 +4,5 @@ export class Project {
   director: string;
   youtubeid: string;
   image: string;
-  video: string;
+  tag: string;
 }
