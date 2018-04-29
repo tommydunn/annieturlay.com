@@ -1,7 +1,7 @@
 @import "../../css/breakpoints";
 .hero {
   // background: url(/assets/images/anchors-away.svg);
-  background-color: #036;
+  background-color: #222;
   // background-color: #fff;
   // background-color: #010048;
   background-size: 42px;
@@ -45,12 +45,12 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 600;
-    color: #036;
+    color: #222;
   }
   h2 {
     margin-top: 0;
     margin-bottom: 0;
-    color: #036;
+    color: #222;
   }
 }
 
@@ -137,7 +137,7 @@
     color: #fff;
     &:nth-child(2) {
       margin-bottom: 0;
-      border-bottom: 3px solid #036;
+      border-bottom: 3px solid #222;
     }
   }
 }
