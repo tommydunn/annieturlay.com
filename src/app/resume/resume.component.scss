@@ -1,7 +1,7 @@
 .hero {
   position: relative;
-  background-color: #036;
-  background-image: linear-gradient(90deg, #036 50%, #fff 50%);
+  background-color: rgba(252,179,168,1.00);
+  background-image: linear-gradient(90deg, rgba(252,179,168,1.00) 50%, #fff 50%);
   background-size: 100% 50%;
   .left {
     position: absolute;
@@ -22,8 +22,8 @@
 }
 
 .section--clients {
-  border-top: 2px solid #036;
-  border-bottom: 2px solid #036;
+  border-top: 2px solid rgba(252,179,168,1.00);
+  border-bottom: 2px solid rgba(252,179,168,1.00);
 }
 .level {
   padding-top: 2rem;
@@ -54,7 +54,7 @@ h1 {
 }
 
 .section--education {
-  background-color: #036;
+  background-color: rgba(252,179,168,1.00);
 }
 ul.columns {
   margin-left: 0;
@@ -62,10 +62,10 @@ ul.columns {
 .content {
   a {
     font-weight: bold;
-    color: #036;
+    color: rgba(252,179,168,1.00);
   }
   strong {
-    color: #036;
+    color: rgba(252,179,168,1.00);
   }
 }
 .employment-item li {
