@@ -1,7 +1,8 @@
 @import "../../css/breakpoints";
+@import "../../css/variables";
 .hero {
   // background: url(/assets/images/anchors-away.svg);
-  background-color: #036;
+  background-color: $blue;
   // background-color: #fff;
   // background-color: #010048;
   background-size: 42px;
@@ -45,12 +46,12 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 600;
-    color: #036;
+    color: rgba(62,61,81,1.00);
   }
   h2 {
     margin-top: 0;
     margin-bottom: 0;
-    color: #036;
+    color: rgba(62,61,81,1.00);
   }
 }
 
@@ -137,7 +138,7 @@
     color: #fff;
     &:nth-child(2) {
       margin-bottom: 0;
-      border-bottom: 3px solid #036;
+      border-bottom: 3px solid rgba(62,61,81,1.00);
     }
   }
 }
