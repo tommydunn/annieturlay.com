@@ -5,11 +5,11 @@ export const PROJECTS: Project[] = [
     name: 'Infiniti',
     title: 'Rules of Luxury',
     director: 'Adam Hashemi - Reset',
-    youtubeid: '-SOfV1DiQI8',
+    youtubeid: 'W7MaSDkT70M',
     image: 'assets/images/splash/rules-of-luxury.png',
     tag: ''
   }, {
-    name: 'Letgo',
+    name: 'letgo',
     title: 'Cliff',
     director: 'Noam Murro - Biscuit',
     youtubeid: '6XlBeaxTUEg',
@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'Fruit of the Loom',
-    title: 'PlasticPants',
+    title: 'Plastic Pants',
     director: 'Martin Granger - Moxie',
     youtubeid: 'cdtWfcxgm-Q',
     image: 'assets/images/splash/fruit-of-the-loom-plasticpants.jpg',
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'belvita',
-    title: 'breakfast police',
+    title: 'Breakfast Police',
     director: 'Miguel Arteta - Bob Industries',
     youtubeid: 'NQNvfIROBmg',
     image: 'assets/images/splash/belvita-breakfast-police.jpg',
@@ -73,7 +73,7 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'Kraft Cracker Barrel',
-    title: 'PrestigiousAwards',
+    title: 'Prestigious Awards',
     director: 'Milana Vayntrub - Hungry Man',
     youtubeid: 'hTWdYiCduWo',
     image: 'assets/images/splash/kraft-cracker-barrel-prestigious-awards-splash.jpg',
@@ -87,35 +87,35 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'kraft macaroni & cheese',
-    title: 'diamond jubilee',
+    title: 'Diamond Jubilee',
     director: 'Hank Perlman - Hungry Man',
     youtubeid: 'Txz3tJ8bx9Q',
     image: 'assets/images/splash/kmc-diamond-jubilee.jpg',
     tag: ''
   }, {
-    name: 'BarkThins',
-    title: 'Direct hit',
+    name: 'barkTHINS',
+    title: 'Direct Hit',
     director: 'Noble/Screen Novelties',
     youtubeid: 'k5sj8kCm2ag',
     image: 'assets/images/splash/barkthins-direct-hit.jpg',
     tag: ''
   }, {
     name: 'velveeta',
-    title: 'declaration',
+    title: 'Declaration',
     director: 'The Nix Brothers',
     youtubeid: 'wpXyI3WPBn4',
     image: 'assets/images/splash/velveeta-declaration.jpg',
     tag: ''
   }, {
-    name: 'Letgo',
+    name: 'letgo',
     title: 'Fire',
     director: 'Noam Murro - Biscuit',
     youtubeid: 'pCai1ZxMRcg',
     image: 'assets/images/splash/letgo-fire-splash.jpg',
     tag: ''
   }, {
-    name: 'old navy',
-    title: 'flare to spare',
+    name: 'Old Navy',
+    title: 'Flare To Spare',
     director: 'Roman Coppola',
     youtubeid: 'TKg24Vw4NDU',
     image: 'assets/images/splash/old-navy-flare-to-spare.jpg',
@@ -149,36 +149,36 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/infiniti-splash.jpg',
     tag: ''
   }, {
-    name: 'fruit of the loom',
-    title: 'plastique',
+    name: 'Fruit Of The Loom',
+    title: 'Plastique',
     director: '',
     youtubeid: 'T26S4Gaan90',
     image: 'assets/images/splash/fruit-of-the-loom-plastique.jpg',
     tag: ''
   }, {
-    name: 'rock shox',
-    title: 'bike',
+    name: 'Rock Shox',
+    title: 'Bike',
     director: 'Jason Macdonald - no6',
     youtubeid: 'QhRN7BtCtJw',
     image: 'assets/images/splash/rock-shox-bike.jpg',
     tag: ''
   }, {
-    name: 'hotels.com',
-    title: 'vacation equality project',
+    name: 'Hotels.com',
+    title: 'Vacation Equality Project',
     director: 'Brent Bonacorso - Tool',
     youtubeid: 'TdLEsPjs6tY',
     image: 'assets/images/splash/hotels-com-vacation-equality-project.jpg',
     tag: ''
   }, {
-    name: 'applebees',
-    title: 'showboatin chef 60',
+    name: 'Applebees',
+    title: 'Showboatin Chef 60',
     director: 'Irv Blitz - MJZ ',
     youtubeid: 'Q3s9GeSO24w',
     image: 'assets/images/splash/applebees-showboatin-chef-60.jpg',
     tag: ''
   }, {
-    name: 'jello',
-    title: 'puddin hour',
+    name: 'Jello',
+    title: 'Puddin Hour',
     director: 'Pelorian Brothers - MJZ',
     youtubeid: 'mBvFhBRIsEQ',
     image: 'assets/images/splash/jello-puddin-hour.jpg',
