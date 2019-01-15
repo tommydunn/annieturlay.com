@@ -6,7 +6,7 @@ export const PROJECTS: Project[] = [
     title: 'Rules of Luxury',
     director: 'Adam Hashemi - Reset',
     youtubeid: 'W7MaSDkT70M',
-    image: 'assets/images/splash/rules-of-luxury.png',
+    image: 'assets/images/splash/luxury.png',
     tag: ''
   }, {
     name: 'letgo',
