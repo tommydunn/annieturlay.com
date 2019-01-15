@@ -169,7 +169,7 @@ export const PROJECTS: Project[] = [
     youtubeid: 'TdLEsPjs6tY',
     image: 'assets/images/splash/hotels-com-vacation-equality-project.jpg',
     tag: ''
-  }, , {
+  }, {
     name: 'Jello',
     title: 'Puddin Hour',
     director: 'Pelorian Brothers - MJZ',
