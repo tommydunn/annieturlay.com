@@ -169,12 +169,19 @@ export const PROJECTS: Project[] = [
     youtubeid: 'TdLEsPjs6tY',
     image: 'assets/images/splash/hotels-com-vacation-equality-project.jpg',
     tag: ''
-  }, {
+  }, , {
     name: 'Jello',
     title: 'Puddin Hour',
     director: 'Pelorian Brothers - MJZ',
     youtubeid: 'mBvFhBRIsEQ',
     image: 'assets/images/splash/jello-puddin-hour.jpg',
+    tag: ''
+  }, {
+    name: 'Applebees',
+    title: 'Showboatin Chef 60',
+    director: 'Irv Blitz - MJZ ',
+    youtubeid: 'Q3s9GeSO24w',
+    image: 'assets/images/splash/applebees-showboatin-chef-60.jpg',
     tag: ''
   }
 ];
