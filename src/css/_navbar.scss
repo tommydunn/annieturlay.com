@@ -1,28 +1,28 @@
 body {
   // &.projects {
-    .app-nav__item {
-      a {
-        color: $white;
-        &:hover {
-          color: lighten($white, 50%);
-        }
-        &.nav-link--is-active {
-          border-bottom: 1px solid $white;
-        }
+  .app-nav__item {
+    a {
+      color: $white;
+      &:hover {
+        color: lighten($white, 50%);
+      }
+      &.nav-link--is-active {
+        border-bottom: 1px solid $white;
       }
     }
+  }
   // }
   &.about-me,
   &.resume {
     .app-nav__item {
       a {
-        color: $blue;
+        color: $white;
         &:hover {
           color: lighten($blue, 50%);
         }
         &.nav-link--is-active {
-          color: $blue;
-          border-bottom: 1px solid $blue;
+          color: lighten($blue, 50%);
+          border-bottom: 1px solid $white;
         }
       }
     }
