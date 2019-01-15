@@ -17,7 +17,7 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'Kraft Macaroni & Cheese',
-    title: 'swear like a mother',
+    title: 'Swear Like A Mother',
     director: 'Hank Perlman - Hungry Man',
     youtubeid: 'GUbwahg4yac',
     image: 'assets/images/splash/kraft-swear-splash.jpg',
@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/charles-schwab-the-reason.jpg',
     tag: ''
   }, {
-    name: 'belvita',
+    name: 'Belvita',
     title: 'Breakfast Police',
     director: 'Miguel Arteta - Bob Industries',
     youtubeid: 'NQNvfIROBmg',
@@ -86,7 +86,7 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/ice-breakers-cement-shoes.jpg',
     tag: ''
   }, {
-    name: 'kraft macaroni & cheese',
+    name: 'Kraft Macaroni & Cheese',
     title: 'Diamond Jubilee',
     director: 'Hank Perlman - Hungry Man',
     youtubeid: 'Txz3tJ8bx9Q',
@@ -156,7 +156,7 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/fruit-of-the-loom-plastique.jpg',
     tag: ''
   }, {
-    name: 'Rock Shox',
+    name: 'RockShox',
     title: 'Bike',
     director: 'Jason Macdonald - no6',
     youtubeid: 'QhRN7BtCtJw',
@@ -164,17 +164,10 @@ export const PROJECTS: Project[] = [
     tag: ''
   }, {
     name: 'Hotels.com',
-    title: 'Vacation Equality Project',
+    title: 'Vacation Equality',
     director: 'Brent Bonacorso - Tool',
     youtubeid: 'TdLEsPjs6tY',
     image: 'assets/images/splash/hotels-com-vacation-equality-project.jpg',
-    tag: ''
-  }, {
-    name: 'Applebees',
-    title: 'Showboatin Chef 60',
-    director: 'Irv Blitz - MJZ ',
-    youtubeid: 'Q3s9GeSO24w',
-    image: 'assets/images/splash/applebees-showboatin-chef-60.jpg',
     tag: ''
   }, {
     name: 'Jello',
