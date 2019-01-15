@@ -142,13 +142,6 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/applebees-flash-mob-splash.jpg',
     tag: ''
   }, {
-    name: 'Infiniti',
-    title: 'Alexa',
-    director: 'Christian Lamb - Scheme Engine',
-    youtubeid: 'Smq6ssI-nH8',
-    image: 'assets/images/splash/infiniti-splash.jpg',
-    tag: ''
-  }, {
     name: 'Fruit Of The Loom',
     title: 'Plastique',
     director: '',
@@ -177,4 +170,12 @@ export const PROJECTS: Project[] = [
     image: 'assets/images/splash/jello-puddin-hour.jpg',
     tag: ''
   }
+  // {
+  //   name: 'Infiniti',
+  //   title: 'Alexa',
+  //   director: 'Christian Lamb - Scheme Engine',
+  //   youtubeid: 'Smq6ssI-nH8',
+  //   image: 'assets/images/splash/infiniti-splash.jpg',
+  //   tag: ''
+  // },
 ];
