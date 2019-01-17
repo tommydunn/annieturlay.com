@@ -15,7 +15,7 @@ $stroke: 4px;
 
 .box {
   position: relative;
-  width: 85vw;
+  width: 100%;
   padding: 10px;
   margin: 0 auto;
   background-color: #036;
@@ -25,7 +25,7 @@ $stroke: 4px;
   }
 
    > img {
-    width: 85vw;
+    width: 100%;
     height: 50vw;
 
     object-fit: cover;
@@ -43,7 +43,7 @@ $stroke: 4px;
     left: $pad;
     display: block;
     content: '';
-    border: solid $stroke white;
+    border: solid $stroke #fff;
     border-bottom: 0;
   }
 }
@@ -59,6 +59,10 @@ $stroke: 4px;
   text-transform: uppercase;
   letter-spacing: .1em;
   white-space: nowrap;
+
+  @include mobile {
+    width: 74.5vw;
+  }
 }
 
 .text > div {
@@ -72,7 +76,7 @@ $stroke: 4px;
   width: 600px;
   height: $stroke;
   content: '';
-  background: white;
+  background: #fff;
 }
 
 .innertext::before {

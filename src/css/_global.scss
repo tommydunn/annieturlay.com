@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  min-width: 100% !important;
 }
 *,
 *::before,
@@ -8,7 +9,6 @@ html {
 }
 
 body {
-  min-width: 320px;
   font-family: $base-font;
   color: $black;
 }
