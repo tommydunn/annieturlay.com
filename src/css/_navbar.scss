@@ -12,7 +12,20 @@ body {
     }
   }
   // }
-  &.about-me,
+  &.about-me {
+    .app-nav__item {
+      a {
+        color: $blue;
+        &:hover {
+          color: lighten($blue, 50%);
+        }
+        &.nav-link--is-active {
+          color: lighten($blue, 50%);
+          border-bottom: 1px solid $white;
+        }
+      }
+    }
+  }
   &.resume {
     .app-nav__item {
       a {

@@ -36,19 +36,24 @@ a {
 .hidden {
   display: none;
 }
+
 li {
   list-style: none;
 }
+
 a {
   color: $black;
 }
+
 ::selection {
   color: $white;
-  background: $blue;
+  background-color: $blue;
 }
+
 .white {
   color: $white;
 }
+
 .blue {
   color: $blue;
 }
