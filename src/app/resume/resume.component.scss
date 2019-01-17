@@ -66,6 +66,9 @@ ul.columns {
   }
   strong {
     color: #036;
+    &.white {
+      color: #fff;
+    }
   }
 }
 .employment-item li {
