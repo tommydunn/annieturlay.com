@@ -43,7 +43,7 @@
 
 .link {
   &:hover {
-    color: #0064c8;
+    color: #0064c8 !important;
   }
 }
 .white {
@@ -56,9 +56,12 @@ h1 {
 .section--education {
   background-color: #036;
 }
-ul.columns {
-  margin-left: 0;
+ul {
+  .columns {
+    margin-left: 0;
+  }
 }
+
 .content {
   a {
     font-weight: bold;
@@ -71,6 +74,11 @@ ul.columns {
     }
   }
 }
+
 .employment-item li {
   list-style: circle;
+}
+
+.title {
+  color: #036;
 }
