@@ -1,9 +1,6 @@
 @import "../../css/breakpoints";
 .hero {
-  // background: url(/assets/images/anchors-away.svg);
   background-color: #036;
-  // background-color: #fff;
-  // background-color: #010048;
   background-size: 42px;
   @media(max-width: 769px) {
     padding-top: 8rem;
@@ -94,6 +91,9 @@
     box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
 
     @include tablet {
+      height: 30vw;
+    }
+    @include desktop {
       height: 20vw;
     }
   }

@@ -3,6 +3,13 @@ import { Project } from './project';
 export const PROJECTS: Project[] = [
   {
     name: 'Infiniti',
+    title: 'Move The Meeting',
+    director: 'Adam Hashemi - Reset',
+    youtubeid: '1Qv6Vc74R7A',
+    image: 'assets/images/splash/infiniti-move-the-meeting.jpg',
+    tag: ''
+  }, {
+    name: 'Infiniti',
     title: 'Rules of Luxury',
     director: 'Adam Hashemi - Reset',
     youtubeid: 'W7MaSDkT70M',
