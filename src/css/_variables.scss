@@ -1,9 +1,11 @@
 // Colors
-$light-green: #9eebcf;
-$white: #fff;
-$black: #28282d;
+$white: #f5f7fa;
+$black: #444950;
 $blue: #036;
+$hover: #99adc1;
 $light-blue: #0064c8;
+$blue-overlay: rgba(0, 51, 102, .5);
+
 // Misc
 $base-font: 'Lato', sans-serif;
 $tablet: 769px;
@@ -14,6 +16,7 @@ $close-btn-size: 50px;
 $close-btn-before-width: 50px;
 $close-btn-before-height: 10px;
 $speed: 86ms;
+
 //
 $site-font-path: "../assets/fonts" !default;
 $icon--instagram: \e907;
@@ -28,4 +31,3 @@ $icon--play: \ea15;
 $icon--pause: \ea16;
 $icon--stop: \ea17;
 $icon--linkedin: \eac9;
-// rgb(239,247,255)

@@ -4,7 +4,7 @@ body {
     a {
       color: $white;
       &:hover {
-        color: lighten($white, 50%);
+        color: lighten($blue, 50%);
       }
       &.nav-link--is-active {
         border-bottom: 1px solid $white;
@@ -17,11 +17,11 @@ body {
       a {
         color: $blue;
         &:hover {
-          color: lighten($blue, 50%);
+          color: lighten($blue, 20%);
         }
         &.nav-link--is-active {
-          color: lighten($blue, 50%);
-          border-bottom: 1px solid lighten($blue, 50%);
+          color: lighten($blue, 20%);
+          border-bottom: 1px solid lighten($blue, 20%);
         }
       }
     }
@@ -31,10 +31,10 @@ body {
       a {
         color: $white;
         &:hover {
-          color: lighten($blue, 50%);
+          color: lighten($blue, 10%);
         }
         &.nav-link--is-active {
-          color: lighten($blue, 50%);
+          color: $white;
           border-bottom: 1px solid $white;
         }
       }
@@ -79,13 +79,13 @@ body {
       background-position: 1em center;
     }
     @media screen and (max-width: 32.1875em) {
-      nav.app-nav a {
+      .app-nav a {
         padding: .75em .5em;
         text-align: center;
       }
     }
     @media screen and (max-width: 56.25em) {
-      nav.app-nav a {
+      .app-nav a {
         display: block;
       }
     }
